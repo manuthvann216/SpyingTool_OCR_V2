@@ -14,7 +14,7 @@ Copy code
 ```
 docker-compose up --build
 ```
-Run
+- Run
 For subsequent runs, you can use the following command:
 
 bash
