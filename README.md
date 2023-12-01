@@ -11,15 +11,20 @@ To build the project for the first time, run the following command:
 
 bash
 Copy code
+```
 docker-compose up --build
+```
 Run
 For subsequent runs, you can use the following command:
 
 bash
 Copy code
+```
 docker-compose up
-Testing
+```
+## Testing
 To test the OCR functionality, visit the following URL in your browser:
+```
 http://localhost/docs#/default/perform_ocr_from_url_ocr_from_url__post
-
+```
 This will take you to the API documentation where you can explore and test the OCR endpoint.
