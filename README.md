@@ -1,10 +1,10 @@
 # SpyingTool_OCR_V2
 
-Introduction
+## Introduction
 This project is designed to perform OCR (Optical Character Recognition) from a specified URL. It provides a convenient and efficient way to extract text information from images using OCR technology.
 
-Getting Started
-Prerequisites
+## Getting Started
+- Prerequisites
 Docker installed on your machine
 Build
 To build the project for the first time, run the following command:
