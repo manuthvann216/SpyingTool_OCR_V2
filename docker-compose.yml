@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  spyingtool_ocr:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/spyingtool_ocr/src
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]

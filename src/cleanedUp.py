@@ -1,12 +1,10 @@
-from fastapi import FastAPI, Form
 import cv2
 import numpy as np
+from io import BytesIO
+import requests
 import pandas as pd
 import json
 import easyocr
-import requests
-
-app = FastAPI()
 
 # Define the EasyOCR Reader
 reader = easyocr.Reader(['en'])
@@ -31,8 +29,9 @@ def perform_ocr(image):
 
     return json_data
 
-@app.post("/ocr-from-url/")
-async def perform_ocr_from_url(url: str = Form(...)):
-    image = read_image_from_url(url)
-    text = perform_ocr(image)
-    return {"text": text}
+
+# Example usage
+url = "https://i.imgur.com/oU0Sxfy.png"
+image = read_image_from_url(url)
+result = perform_ocr(image)
+print(result)
